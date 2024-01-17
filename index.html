@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>holi
+    </h1>
+
+
+    <script>
+        // 1. Imprimir todos los numeros del 1 al 10
+/*
+        let a = 0;
+
+        while(a <= 10 ){
+            console.log(a + " while");
+            a++;
+        }
+
+        for(let a = 0; a <= 10; a++){
+            console.log(a + " for");
+        }
+
+        oneToTen = () => {
+            for(let num = 0; num <= 10; num++){
+            console.log(num + " function");
+            }
+        } 
+        oneToTen();
+ 
+        //2. Hasta x valor dado por el usuario
+      
+        oneToX = (num) => {
+            for(let i = 0; i <= num; i++){
+            console.log(i + " function2");
+            }
+        } 
+        amount = prompt(">: ");
+        oneToX(amount);
+
+        //3. Todos valores pares hasta x
+        oneToXeven = (num) => {
+            for(let i = 0; i <= num; i++){
+                if(i % 2 == 0){
+                    console.log(i);
+                }
+            }
+        } 
+        amount = prompt(">: ");
+        oneToXeven(amount);
+*/  
+        //4. Tablas multiplicar 
+        multiplicationTables = (num, row,table) => {
+            for(let i = 1; i <= num; i++){
+                let actualRow = []
+                for(let j = 1; j <= row; j++){
+                    x = i * j;
+                    actualRow.push(x);
+                }
+                console.log(actualRow.join(", "))
+                console.log()
+                table.push(...actualRow)
+            }
+        } 
+
+        let tables = []
+        amount = prompt(">: ");
+        rows = prompt(">: ");
+        multiplicationTables(amount, rows, tables);   
+
+        //5. km to miles
+
+        kmToMilesConverter = (km) => console.log(km * 0.621371);
+        kmToMilesConverter(5);
+    </script>
+</body>
+</html>
